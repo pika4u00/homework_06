@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">  
+	<meta charset="utf-8">  
 </head>
 <body>
-	<header>
-		<h1>ФОРМЫ</h1>
-	</header>
+	<style type="text/css">
+		fieldset {background-color: #ccdff8}
+	</style>
+	<h1>ФОРМЫ</h1>
 	<form action="table.php" method="post">
-		<div>
-			<h3> Текстовое поле</h3>
-		     Введите текст:<br>  
-		     <input type="text" name="top">
-		</div>
-		<div>
-			<h3>Поле для ввода пароля</h3>
-		    Введите пароль:<br>
-		    <input type="password" name="top">
-		</div>
-		<div>
-		    <h3>Флаг</h3>
-		    Выберите:<br>
-		    <input type="checkbox" name="top" value="Кофе">Кофе<br>
-		    <input type="checkbox" name="top" value="Чай">Чай<br>
-		    <input type="checkbox" name="top" value="Какао">Какао<br>
-	    </div>
-	    <div>
-	    	<h3>Переключатель</h3>
-	    	Выберите:<br>
-	    	<input type="radio" name="top">Чай<br>
-	    	<input type="radio" name="top">Кофе<br>
-	    </div>
-	    <div>
-	    	<h3>Загрузка файла </h3>
-	    	<input type="file" name="top"><br>
-	    	<input type="file" name="top"><br>
-
-	    </div>
-	    <div>
-	    	<h3>Кнопка сброса значений</h3>
-	    	<input type="reset" name="top">
-	    </div>
-	    <div>
-	    	<h3>Кнопка отправки данных</h3>
-	    	<input type="submit" name="top">
-	    </div>
-	    <div>
-	    	<h3>Кнопка</h3>
-	    	<input type="button" name="top">
-	    </div>
-	    <div>
-	    	<h3>Поле для e-mail</h3>
-	    	Введите адрес электронной почты<br>
-	    	<input type="e-mail" name="top">
-	    </div>
-	    <div>
-	    	<h3>Поле для поисковых запросов</h3>
-	    	Что вы ищите?<br>
-	    	<input type="search" name="top">
-	    </div>
-	    <div>
-	    	<h3>Поле для номера телефона</h3>
-	    	Введите номер телефона<br>
-	    	<input type="tel" name="top">
-	    </div>
-	    <div>
-	    	<h3>Поле для URL адреса</h3>
-	    	Введите ссылку<br>
-	    	<input type="url" name="top">
-	    </div>
-	    <div>
-	    	<h3>Поле для чисел</h3>
-	    	Введите число<br>
-	    	<input type="numbwer" name="top" min="0" max="100" step="2">
-	    </div>
-	    <div>
-	    	<h3>Ползунок</h3>
-	    	<input type="range" name="top" max="100" min="0" step="2">
-	    </div>
-
+		<fieldset>
+			<legend>Текстовое поле</legend>
+			<label>Введите текст:</label>
+			<input type="text" name="top1">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для ввода пароля</legend>
+			<label>Введите пароль:</label>
+			<input type="password" name="top2">
+		</fieldset>
+		<fieldset>
+			<legend>Флаг</legend>
+			<label>Выберите:</label><br>
+			<input type="checkbox" name="top4" value="Чай">Чай<br>
+			<input type="checkbox" name="top3" value="Кофе">Кофе<br>
+			<input type="checkbox" name="top5" value="Какао">Какао<br>
+		</fieldset>
+		<fieldset>
+			<legend>Переключатель</legend>
+			<label>Выберите:</label><br>
+			<input type="radio" name="top6">Чай<br>
+			<input type="radio" name="top6">Кофе<br>
+			<input type="radio" name="top6">Какао<br>
+		</fieldset>
+		<fieldset>
+			<legend>Загрузка файла</legend>
+			<input type="file" name="top7"><br>
+			<input type="file" name="top8"><br>
+			<input type="file" name="top9"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Кнопка сброса значений</legend>
+			<input type="reset" name="top10">
+		</fieldset>
+		<fieldset>
+			<legend>Кнопка отправки данных</legend>
+			<input type="submit" name="top11">
+		</fieldset>
+		<fieldset>
+			<legend>Кнопка</legend>
+			<input type="button" name="top12">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для e-mail</legend>
+			<label>Введите адрес электронной почты</label>
+			<input type="e-mail" name="top13">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для поисковых запросов</legend>
+			<label>Что вы ищите?</label>
+			<input type="search" name="top14">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для номера телефона</legend>
+			<label>Введите номер телефона</label>
+			<input type="tel" name="top15">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для URL адреса</legend>
+			<label>Введите ссылку</label>
+			<input type="url" name="top16">
+		</fieldset>
+		<fieldset>
+			<legend>Поле для чисел</legend>
+			<label>Введите число</label>
+			<input type="numbwer" name="top17" min="0" max="100" step="2">
+		</fieldset>
+		<fieldset>
+			<legend>Ползунок</legend>
+			<input type="range" name="top18" max="100" min="0" step="2">
+		</fieldset>
+		<fieldset>
+			<legend>Раскрывающийся список</legend>
+			<label>Выберите напиток</label>
+			<select name="top19" size="1">
+    			<option value="">Чай</option>
+    			<option value="">Кофе</option>
+   				<option value="">Какао</option>
+			</select>
+		</fieldset>
 	</form>
-
 </body>
 </html>
