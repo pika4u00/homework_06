@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">  
+	<title>Таблица по мнемотехнике</title>
+   <meta charset="utf-8"> 
+   <style type="text/css">
+			table{
+				border-collapse: collapse;
+				text-align: center;
+				}
+			td{
+				border:2px black solid;
+				padding: 10px;
+				background-color: #d6f9d7
+				}
+			caption {
+				font-size: 10px;
+				font-weight: bold;
+				}
+			.lone1 {
+				background-color: #aaaaff
+				}
+			.lone2 {
+				background-color: #aaaaff
+				}
+			.line {
+				background-color: #aaaaff
+				}
+		</style> 
 </head>
 <body>
 	<main>
-		<style type="text/css">
-			table{
-				border-collapse: collapse;
-				text-align: center;}
-			td{border:2px black solid;
-				padding: 10px;}
-			caption {
-				font-size: 10px;
-				font-weight: bold;}
-			thead {background-color: #aaaaff
-				 }
-			tfoot {background-color: #aaaaff
-				}
-			.line {background-color: #aaaaff
-
-			}
-		</style>
 		<table>
 			<thead>
 				<tr>
-					<td colspan="10"> ТАБЛИЦА ПО МНЕМОТЕХНИКЕ</td>
+					<td class="lone1" colspan="10">ТАБЛИЦА ПО МНЕМОТЕХНИКЕ</td>
 				</tr>
 			</thead>
+			<tfoot>
+				<tr>
+					<td class="lone2" colspan="10">КОНЕЦ!</td>
+				</tr>
+			</tfoot>
 			<tbody>
 				<tr>
 					<td class="line" rowspan="8">-></td>
@@ -112,11 +125,7 @@
 					<td>7</td>
 				</tr>
 			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="10"> КОНЕЦ!</td>
-				</tr>
-			</tfoot>
+			
 		</table>
 	</main>
 </body>
